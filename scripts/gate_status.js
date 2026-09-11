@@ -5,7 +5,7 @@
 // ==============================
 // USER CONFIGURATION
 // ==============================
-const AES_KEY = '1eb3500132a12079cc7b0e8c973b19f20830eda6b46ed9c87542eeca99596978';
+const AES_KEY = 'YOUR_KEY_HERE';
 
 const LORA_ID = 100;
 const VIRTUAL_COMPONENT = 'boolean:200';
