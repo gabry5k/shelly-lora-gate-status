@@ -1,4 +1,3 @@
-```javascript
 // Shelly LoRa Gate Status - Receiver
 // Shelly EM Gen4 + BLU Door/Window
 // Firmware 2.0.0
@@ -129,4 +128,3 @@ console.log(
   'LoRa ID: ' + LORA_ID
 );
 console.log('Receiver ready!');
-```
