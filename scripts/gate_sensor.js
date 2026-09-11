@@ -1,4 +1,4 @@
-// Shelly LoRa Gate Status - Receiver
+// Shelly LoRa Gate Status - Gate Sensor
 // Shelly EM Gen4 + BLU Door/Window
 // Firmware 2.0.0
 
@@ -119,7 +119,7 @@ Shelly.addStatusHandler(function (status) {
 });
 
 console.log('================================');
-console.log('GATE SENSOR LORA RECEIVER');
+console.log('GATE SENSOR');
 console.log('================================');
 console.log(
   'BLU Sensor ID: ' + BLU_SENSOR_ID
@@ -127,4 +127,4 @@ console.log(
 console.log(
   'LoRa ID: ' + LORA_ID
 );
-console.log('Receiver ready!');
+console.log('Sensor ready!');
