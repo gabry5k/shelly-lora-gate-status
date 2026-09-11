@@ -130,6 +130,43 @@ function verifyMessage(message) {
 // AES DECRYPTION
 // ==============================
 function decryptMessage(buffer, keyHex) {
+
+  function fromHex(hex) {
+    const arr = new ArrayBuffer(hex.length / 2);
+
+    for (let i = 0; i < hex.length; i += 2) {
+      arr[i / 2] = parseInt(hex.substr(i, 2), 16);
+    }
+
+    return arr;
+  }
+
+  function hex2a(hex) {
+    hex = hex.toString();
+
+    let str = '';
+
+    for (let i = 0; i < hex.length; i += 2) {
+      str += String.fromCharCode(
+        parseInt(hex.substr(i, 2), 16)
+      );
+    }
+
+    return str;
+  }
+
+  function toHex(buffer) {
+    let s = '';
+
+    for (let i = 0; i < buffer.length; i++) {
+      s += (256 + buffer[i])
+        .toString(16)
+        .substr(-2);
+    }
+
+    return s;
+  }
+
   const key = fromHex(keyHex);
 
   const decrypted =
@@ -142,7 +179,11 @@ function decryptMessage(buffer, keyHex) {
     );
 
   if (!decrypted || decrypted.byteLength === 0) {
-    return null;
+    console.log(
+      '[LoRa] Invalid message: empty decryption result'
+    );
+
+    return;
   }
 
   const hex = toHex(decrypted);
