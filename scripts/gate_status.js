@@ -1,4 +1,4 @@
-// Shelly LoRa Gate Status - Transmitter
+// Shelly LoRa Gate Status - Gate Status
 // Shelly 1PM Gen4
 // Firmware 2.0.0
 
@@ -331,7 +331,7 @@ Shelly.addEventHandler(function (event) {
 // STARTUP
 // ==============================
 console.log('================================');
-console.log('GATE SENSOR LORA TRANSMITTER');
+console.log('GATE STATUS');
 console.log('================================');
 console.log(
   'Virtual Component: ' +
@@ -341,5 +341,5 @@ console.log(
   'LoRa ID: ' +
   LORA_ID
 );
-console.log('Transmitter ready!');
+console.log('Status listener ready!');
 console.log('================================');
