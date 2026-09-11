@@ -21,7 +21,7 @@ Any compatible **Shelly Gen3 or Gen4 device supporting the LoRa Add-on and Shell
 
 The reference implementation was developed and tested using:
 
-- Shelly EM Gen4 — sensor side
+- Shelly 1 Gen4 — sensor side
 - Shelly 1PM Gen4 — receiver side
 - Shelly BLU Door/Window — gate sensor
 
@@ -101,7 +101,7 @@ Example hardware
 The following hardware was used for development and testing:
 Role	                Device
 Gate sensor	            Shelly BLU Door/Window
-Sensor-side device	    Shelly EM Gen4
+Sensor-side device	    Shelly 1 Gen4
 Receiver	            Shelly 1PM Gen4
 LoRa	                LoRa Add-on on both Shellys
 ```
@@ -486,7 +486,7 @@ This project is designed around the Shelly scripting and LoRa functionality avai
 It is not intended to be limited to the specific devices used during development.
 Tested reference hardware
 Sensor side:
-Shelly EM Gen4
+Shelly 1 Gen4
 
 Receiver:
 Shelly 1PM Gen4
