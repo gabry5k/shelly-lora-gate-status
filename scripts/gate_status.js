@@ -280,7 +280,10 @@ Shelly.addEventHandler(function (event) {
     );
 
 
-  if (decryptedMessage === null) {
+  if (
+    decryptedMessage === null ||
+    typeof decryptedMessage === 'undefined'
+  ) {
     console.log(
       '[LoRa] Invalid or unreadable message'
     );
