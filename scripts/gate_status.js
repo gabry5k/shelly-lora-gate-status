@@ -158,7 +158,7 @@ function decryptMessage(buffer, keyHex) {
 // VIRTUAL COMPONENT
 // ==============================
 const gateStatus =
-  Virtual.getComponent(VIRTUAL_COMPONENT);
+  Virtual.getHandle(VIRTUAL_COMPONENT);
 
 if (!gateStatus) {
   console.log(
